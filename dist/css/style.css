@@ -72,8 +72,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 144px;
-	max-width: 144px;
+	/* width: 144px;
+	max-width: 144px; */
 }
 /* .dashboard css */
 
@@ -175,3 +175,9 @@ table.dataTable{
 }
 
 /* datatable css */
+
+/* Job upload file */
+.after-upload{
+	display: none;
+	margin-top: 20px;
+}
