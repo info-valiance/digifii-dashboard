@@ -106,7 +106,7 @@
 			<!-- /.navbar-sidebar -->
         </nav>
 
-        <div id="page-wrapper" class="">
+        <div id="page-wrapper" class="p-0">
 		
 			<div class="row">
                 <div class="col-lg-12 main-tabs">                    
@@ -137,7 +137,7 @@
                                         <th>Job ID</th>
                                         <th>Username</th>
                                         <th>Number of Forms Processed</th>
-                                        <th>Origional File</th>
+                                        <th>Original File</th>
                                         <th>Processing Status</th>
                                         <th>Score</th>
                                         <th></th>
@@ -292,6 +292,7 @@
         $('#dataTables-joblist').DataTable({
             "responsive": true,
 			"bInfo" : false,
+			"ordering": false,
 			"language": {
 				"paginate": {
 				  "previous": "<i class='fa fa-angle-left'></i>",
