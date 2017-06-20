@@ -36,7 +36,7 @@
 
 /* dashboard css */
 .navbar{
-	background-color: #273b52;
+	background-color: #273043;
 }
 
 .job-section{
@@ -123,10 +123,11 @@
 
 /* job id CSS */
 .job-id{
-	background-color: #36a2eb !important;
+	background-color: #273043 !important;
     border: 0;
     border-radius: 0;
 	color: #FFF !important;
+	line-height:35px;
 }
 .user-details{
 	background-color: #eaeaea !important;
@@ -156,7 +157,9 @@ table.dataTable{
 	margin:0;
 	padding-top: 6px;
 }
-
+#dataTables-jobid th, #dataTables-jobid td, #dataTables-joblist th, #dataTables-joblist td{
+	text-align: center;
+}
 #dataTables-jobid, #dataTables-jobid_wrapper thead, #dataTables-jobid_wrapper tbody{
 	border: 0;
 }
@@ -168,7 +171,7 @@ table.dataTable{
 	border-bottom: #fff 5px solid !important;
 }
 #dataTables-jobid tbody>tr{
-	border-left: #27c4f3 4px solid !important;
+	border-left: #273043 4px solid !important;
 	border-bottom: #fff 5px solid !important;
 	background-color: #efefef;
 }
@@ -179,6 +182,11 @@ table.dataTable{
 	border-right: 0px;
 	border-top: 0px;
 }
+/* data table no sorting */
+.no-sort::after { display: none!important; }
+
+.no-sort { pointer-events: none!important; cursor: default!important; }
+
 
 /* datatable css */
 
@@ -186,4 +194,33 @@ table.dataTable{
 .after-upload{
 	display: none;
 	margin-top: 20px;
+}
+
+
+/* labels */
+.status-label{
+	border-radius: 2px;
+    color: #FFF;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+.completed{
+    background-color: #204d74;
+}
+.cancelled{
+	background-color: #d9534f;
+}
+.in-progress{
+	background-color: #f0ad4e;
+}
+
+#wrapper{
+	overflow: hidden;
+}
+.footer{
+	background: #D9D9D9;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	border-top: #e7e7e7 1px solid;
 }
