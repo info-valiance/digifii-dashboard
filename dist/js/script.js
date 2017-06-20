@@ -63,6 +63,7 @@ function createBarChart(ctx) {
         // Configuration options go here
         options: {
 			responsive: true,
+			maintainAspectRatio: false,
 			legend: {
 				position: 'top',
 			},

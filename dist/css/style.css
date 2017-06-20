@@ -19,6 +19,18 @@
 .mb-15{
 	margin-bottom:15px !important;
 }
+.pl-15{
+	padding-left:15px !important;
+}
+.pr-15{
+	padding-right:15px !important;
+}
+.pt-15{
+	padding-top:15px !important;
+}
+.pb-15{
+	padding-bottom:15px !important;
+}
 .p-0{
 	padding: 0 !important;
 }
@@ -33,6 +45,12 @@
 }
 .display-none{
 	display: none;
+}
+.w-100{
+	width: 100px;
+}
+.w-300{
+	width: 300px;
 }
 button,button:hover,button:focus,button:active{
 	outline: none !important;
@@ -49,8 +67,8 @@ button,button:hover,button:focus,button:active{
 }
 
 .job-section{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	background-color: #353535;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -95,7 +113,12 @@ button,button:hover,button:focus,button:active{
 .panel-box .panel-footer{
 	background-color: transparent;
 }
-
+.nav .dropdown-toggle{
+	color:#FFF;
+}
+.nav .dropdown-toggle:hover,.nav .dropdown-toggle:active,.nav .dropdown-toggle:focus{
+	color:#34404c;
+}
 /* .dashboard css */
 
 
@@ -228,16 +251,25 @@ table.dataTable{
 .in-progress{
 	background-color: #f0ad4e;
 }
-/* body, #page-wrapper{
+#page-wrapper{
 	background-color: #ececec;
-} */
+	padding-bottom: 50px !important;
+}
 #wrapper, #page-wrapper{
 	overflow: hidden;
 }
 .footer{
-	background: #ececec;
+	background: #fff;
 	width: 100%;
 	text-align: center;
 	padding: 10px;
 	border-top: #e7e7e7 1px solid;
+}
+#barChartViews{
+	height:340px !important;
+}
+@media only screen and (max-width: 768px) {
+	#barChartViews{
+		height:270px !important;
+	}
 }

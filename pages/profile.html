@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Digifii</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+	
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Digifii</a>
+            </div>
+            <!-- /.navbar-header -->
+			
+			<ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-caret-down"></i> Account
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="job-list.html"><i class="fa fa-table fa-fw"></i> Job List</a>
+                        </li>
+                        <li>
+                            <a href="profile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+			<!-- /.navbar-sidebar -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="col-lg-12 mt-15 pt-15">
+                <div class="row">
+                    <div class="panel panel-box border-0 pt-15">
+                        <!--<div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>-->
+                        <!-- /.panel-heading -->
+						<div class="panel-heading ml-15 mr-15">
+                            <div class="row">
+								<div>
+									<div class="pull-left"><h2><i class="fa fa-user"></i> John Doe</h2></div>
+								</div>
+								<div class="clearfix"></div>
+								<div>
+									<div class="pull-left w-100"><strong>Username: </strong></div>
+									<div class="pull-left"><span>JohnDoe123</span></div>
+								</div>
+								<div class="clearfix"></div>
+								<div>
+									<div class="pull-left w-100"><strong>Gender: </strong></div>
+									<div class="pull-left"><span>Male</span></div>
+								</div>
+								<div class="clearfix"></div>
+								<div>
+									<div class="pull-left w-100"><strong>Age: </strong></div>
+									<div class="pull-left"><span>29</span></div>
+								</div>
+								<div class="clearfix"></div>
+								<hr/>
+								<div>
+									<div class="pull-left w-100"><strong>Address: </strong></div>
+									<div class="pull-left"><span>A75, Sector 58<br/>Noida, Uttar Pradesh<br/>Pin 909090, India</span></div>
+								</div>
+								<div class="clearfix"></div>
+								<div>
+									<div class="pull-left w-100"><strong>Email: </strong></div>
+									<div class="pull-left"><a href="#"><span>John.Doe@example.com</span></a></div>
+								</div>
+								<div class="clearfix"></div>
+								<div>
+									<div class="pull-left w-100"><strong>Phone: </strong></div>
+									<div class="pull-left"><span>+91 9876543210</span></div>
+								</div>
+								<div class="clearfix"></div>
+								<hr/>
+								<div>
+									<div class="w-300">
+										<form action="" onsubmit="return false;">
+											<div class="form-group">
+												<label for="old_pwd">Old Password:</label>
+												<input type="password" class="form-control" id="old_pwd">
+											</div>
+											<div class="form-group">
+												<label for="new_pwd">New Password:</label>
+												<input type="password" class="form-control" id="new_pwd">
+											</div>
+											<div class="form-group">
+												<label for="re_pwd">Re Enter Password:</label>
+												<input type="password" class="form-control" id="re_pwd">
+											</div>
+											<button class="btn btn-primary" type="submit">Change Password</button>
+										</form>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<hr/>
+							</div>
+                        </div>
+                        <div class="panel-body pt-0">
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+	
+	
+	<footer>
+		<div class="footer">Copyright (c) 2017 Copyright Holder All Rights Reserved.</div>
+	</footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
