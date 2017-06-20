@@ -94,83 +94,131 @@
         <div id="page-wrapper" class="p-0">
 			
 			<div class="col-lg-12 job-section">
-                <div class="col-lg-1">
-				</div>
-                <div class="col-lg-5"> 
-					<div class="col-lg-4">
-						<div class="graphs">
-							<div class="c100 p22 small">
-								<span>22%</span>
-								<div class="slice">
-									<div class="bar"></div>
-									<div class="fill"></div>
-								</div>
-							</div>
-						</div>
-					</div> 
-					<div class="col-lg-4">
-						<div class="graphs">
-							<div class="c100 p75 small">
-								<span>75%</span>
-								<div class="slice">
-									<div class="bar"></div>
-									<div class="fill"></div>
-								</div>
-							</div>
-						</div>
-					</div> 
-					<div class="col-lg-4">
-						<div class="graphs">
-							<div class="c100 p52 small">
-								<span>52%</span>
-								<div class="slice">
-									<div class="bar"></div>
-									<div class="fill"></div>
-								</div>
-							</div>
-						</div>
+                <div class="col-lg-2">
+					<div class="create-job">
+						<!-- Trigger the modal with a button -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Create Job</button>
 					</div>
-                </div>
-				<div class="col-lg-5">   
-					<div class="custom-form-wrapper">
-						<div class="custom-form">
-							<form action="">
-								<div class="col-lg-8">
-									<div class="form-group">
-									  <input type="text" class="form-control" id="" placeholder="Enter First Name" name="fname">
-									</div>
-									<div class="form-group">
-									  <input type="text" class="form-control" id="" placeholder="Enter Last Name" name="lname">
-									</div>
-									<div class="file-upload">
-										<input type="file" class="form-control" id="file" name="file" value="" onchange="getFileName(this);">
-										<div>
-											<button type="button" class="btn btn-primary form-control">Upload File</button>
-										</div>
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Create Job</h4>
+						  </div>
+						  <div class="modal-body">
+							<form id="form" action="" onsubmit="return false;">
+								<div class="form-group">
+								  <input type="text" class="form-control" id="" placeholder="Job title" name="title">
+								</div>
+								<div class="form-group">
+								  <input type="text" class="form-control" id="" placeholder="Job description" name="description">
+								</div>
+								<div class="file-upload form-group">
+									<input type="file" class="form-control" id="file" name="file" value="" onchange="getFileName(this);">
+									<div>
+										<button type="button" class="btn btn-primary form-control">Upload File</button>
 									</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="form-group">
 									<button type="submit" class="btn btn-primary">Submit</button>
 								</div>
 							</form>
+						  </div>
+						  <!--<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						  </div>-->
+						</div>
+
+					  </div>
+					</div>
+					<!-- ./Modal -->
+				</div>
+                <div class="col-lg-10"> 
+					<div class="col-lg-2">
+						<div class="graphs">
+							<div>
+								<div class="c100 p100 small">
+									<span>100%</span>
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button class="btn btn-xs btn-primary" type="button">Download <i class="fa fa-download"></i></button>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="graphs">
+							<div>
+								<div class="c100 p35 small">
+									<span>35%</span>
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button class="btn btn-xs btn-primary display-none" type="button">Download <i class="fa fa-download"></i></button>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="graphs">
+							<div>
+								<div class="c100 p98 small">
+									<span>98%</span>
+									<div class="slice">
+										<div class="bar"></div>
+										<div class="fill"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button class="btn btn-xs btn-primary display-none" type="button">Download <i class="fa fa-download"></i></button>
 						</div>
 					</div>
                 </div>
-                <div class="col-lg-1">
-				</div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
 			
             <div class="col-lg-12">
                 <div class="col-lg-4">
-                    <div class="p-20">
+                    <!-- <div class="p-20">
 						<div>Total number of forms processed till date</div>
 						<div class="processed-img"></div>
 						<div class="pull-right">
 							<h2>5,000</h2>
 						</div>
-					</div>
+					</div> -->
+                    <div class="panel panel-box">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="text-center">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="text-center">
+                                    <div class="huge">5000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="job-list.html">
+                            <div class="panel-footer text-center">
+                                <span>Total # forms processed till date</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <!-- /.col-lg-4 -->
                 <div class="col-lg-8">

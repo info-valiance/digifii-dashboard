@@ -4,6 +4,11 @@ $(document).ready(function () {
     var barCtx = document.getElementById("barChartViews");
     createBarChart(barCtx);
 	
+	$('#form').on("submit",function(){
+		console.log("submit");
+		$('#myModal').modal('hide');
+		$('.after-upload').show();
+	});
 	
 });
 

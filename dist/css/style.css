@@ -31,12 +31,21 @@
 .border-0{
 	border: 0;
 }
+.display-none{
+	display: none;
+}
+button,button:hover,button:focus,button:active{
+	outline: none !important;
+}
 /* .common css */
 
 
 /* dashboard css */
 .navbar{
-	background-color: #273043;
+	background-color: #34404c;
+}
+.navbar-brand{
+	color:#FFF !important;
 }
 
 .job-section{
@@ -47,24 +56,16 @@
 	padding-bottom: 10px;
 }
 .job-section .graphs{
-	max-height: 110px;
+	height: 80px;
+	margin: 5px 0px;
 }
-.custom-form-wrapper{
-	position: relative;
-	height: auto;
-	width: 100%;
-}
-.custom-form{
-	margin:0 auto;
-	padding: 20px;
-	background-color: #36a2eb;
-	overflow: hidden;
-	position: absolute;
-	z-index: 100;
-	top: -32px;
+.job-section .graphs>div>div{
+    position: absolute;
 	left: 0;
-	right: 0;
-	width: 300px;
+    right: 0;
+    margin: auto;
+}
+.job-section .graphs>button{
 }
 .file-upload{
 	position: relative;
@@ -81,6 +82,20 @@
 	/* width: 144px;
 	max-width: 144px; */
 }
+.create-job{
+	margin-top: 30px;
+	text-align: center;
+}
+.panel-box{
+	background-color: #fff;
+	color:#34404c;
+	border-radius: 3px !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+.panel-box .panel-footer{
+	background-color: transparent;
+}
+
 /* .dashboard css */
 
 
@@ -123,7 +138,7 @@
 
 /* job id CSS */
 .job-id{
-	background-color: #273043 !important;
+	background-color: #34404c !important;
     border: 0;
     border-radius: 0;
 	color: #FFF !important;
@@ -171,7 +186,7 @@ table.dataTable{
 	border-bottom: #fff 5px solid !important;
 }
 #dataTables-jobid tbody>tr{
-	border-left: #273043 4px solid !important;
+	border-left: #34404c 4px solid !important;
 	border-bottom: #fff 5px solid !important;
 	background-color: #efefef;
 }
@@ -205,7 +220,7 @@ table.dataTable{
     font-size: 12px;
 }
 .completed{
-    background-color: #204d74;
+    background-color: #337ab7;
 }
 .cancelled{
 	background-color: #d9534f;
@@ -213,12 +228,14 @@ table.dataTable{
 .in-progress{
 	background-color: #f0ad4e;
 }
-
-#wrapper{
+/* body, #page-wrapper{
+	background-color: #ececec;
+} */
+#wrapper, #page-wrapper{
 	overflow: hidden;
 }
 .footer{
-	background: #D9D9D9;
+	background: #ececec;
 	width: 100%;
 	text-align: center;
 	padding: 10px;
