@@ -111,17 +111,40 @@
 								<div class="col-md-4">JobID (July 07, 2017) : Review</div>
 								<div class="col-md-4">Score : <span>97</span></div>
 								<div class="col-md-4">
-									<button class="btn btn-primary pull-right" type="button">Export <i class="fa fa-download"></i></button>
+									<button class="btn btn-md btn-primary pull-right" type="button">Export <i class="fa fa-download"></i></button>
 								</div>
 							</div>
                         </div>
-						<div class="panel-heading user-details ml-15 mr-15">
+						<div class="panel-heading ml-15 mr-15">
                             <div class="row">
+								<div class="profile">
+									<div class="pull-left">
+										<div class="pf-short">JD</div>
+									</div>
+									<div class="pf-info pull-left">
+										<div class="pf-user">John Doe</div>
+										<div class="pf-work">Sales & Marketing</div>
+										
+										<div class="pf-stats">
+											<div class="pull-left">
+												<div class="pf-key"># Form processed</div> <div class="pf-value">127</div>
+											</div>
+											<div class="pull-left">
+												<div class="pf-key">File Name</div> <div class="pf-value">Student Application form</div>
+											</div>
+											<div class="pull-left">
+												<div class="pf-key">Processing Status</div> <div class="pf-value"><span class="status-label completed">Completed</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="row">
 								<div class="col-md-3">Username : <span>John Doe</span></div>
 								<div class="col-md-3">No of Form processed : <span>97</span></div>
 								<div class="col-md-3">File Name : <span>Application_form</span></div>
 								<div class="col-md-3">Processing Status : <span>Completed</span></div>
-							</div>
+							</div> -->
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body pt-0">
@@ -266,12 +289,6 @@
         $('#dataTables-jobid').DataTable({
             "responsive": true,
 			"bInfo" : false,
-			"language": {
-				"paginate": {
-				  "previous": "<i class='fa fa-angle-left'></i>",
-				  "next": "<i class='fa fa-angle-right'></i>"
-				}
-			},
 			"oLanguage": {
 			  "sLengthMenu": 'Display <select class="form-control input-sm">'+
 				'<option value="10">10</option>'+
@@ -280,7 +297,11 @@
 				'<option value="40">40</option>'+
 				'<option value="50">50</option>'+
 				'<option value="-1">All</option>'+
-				'</select> records'
+				'</select> records',
+				"oPaginate": {
+					"sPrevious": "<i class='fa fa-angle-left'></i>",
+					"sNext": "<i class='fa fa-angle-right'></i>"
+				}
 			}
         });
     });

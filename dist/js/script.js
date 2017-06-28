@@ -16,10 +16,10 @@ $(document).ready(function () {
 function getFileName(file) {
     var fileName = $(file).val().split('\\').pop();
 	if(fileName == ""){
-		$('.file-upload button').text('Upload File');
+		$('.file-upload .browse-text').text('Drop file here or click to upload.');
 	} else {
-		if(fileName.length > 15) fileName = fileName.substring(0,15)+'...';
-		$('.file-upload button').text(fileName);
+		if(fileName.length > 35) fileName = fileName.substring(0,35)+'...';
+		$('.file-upload .browse-text').text(fileName);
 	}
 }
 
@@ -37,10 +37,11 @@ function createBarChart(ctx) {
 
         // The data for our dataset
         data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            //labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             datasets: [{
-                label: 'Dataset',
-                backgroundColor: 'rgba(255, 99, 132, 1)',
+                label: 'Jobs',
+                backgroundColor: 'rgba(80, 147, 225, 1)',
                 borderColor: 'rgba(255, 255, 255, 1)',
                 borderWidth: 1,
                 data: [
@@ -69,7 +70,7 @@ function createBarChart(ctx) {
 			},
 			title: {
 				display: true,
-				text: 'Chart.js Bar Chart'
+				text: 'Processed Job per Month'
 			}
 		}
     });
